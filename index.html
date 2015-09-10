@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+
+    <script src="react.js"></script>
+    <script src="JSXTransformer.js"></script>
+</head>
+<body>
+
+
+<div id="container"></div>
+<div>
+    <script type="text/jsx">
+        /** @jsx React.DOM */
+
+
+
+        var Test = React.createClass({
+            render: function () {
+                return (
+                        <div className="ravi">
+                            Hello World! HTML component
+                        </div>
+                )
+            }
+        })
+
+
+        React.render(
+                <Test></Test>,
+                document.getElementById('container')
+        )
+    </script>
+</div>
+</body>
+</html>
